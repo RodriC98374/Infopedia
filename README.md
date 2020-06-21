@@ -1,7 +1,7 @@
 # Infopedia
 
 ## Lista De Integrantes:
-- Emmanuel Mamani
+- Emmanuel Rene Mamani Orellana 
 - Rodrigo Mauricio Cespedes Paredes
 
 ## Descripcion 
@@ -12,3 +12,6 @@ Inforpedia es una pagina web con el objetivo de brindar cursos y contenido de la
  - Visual Code Studio 
  - Github
  - NodeJs
+ - Sublime Text
+ - Html
+ - Css
