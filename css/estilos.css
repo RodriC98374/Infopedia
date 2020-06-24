@@ -4,3 +4,66 @@
     text-decoration: none;
     list-style: none;
 }
+/*
+Seccion 1 
+*/
+header #logo{
+    font-size:'kaushan script', cursive;
+    font-size:60px;
+    text-align: center;
+}
+header center p{
+    text-align: center;
+    width: 42px;
+    line-height: 42px;
+    border-radius: 100%;
+    color: white;
+}
+header center#icono1 p{
+    background: blue ;
+}
+header center#icono2 p{
+    background: red ;
+}
+header center#icono3 p{
+    background:green ;
+}
+/* 
+Seccion 2
+*/
+nav ul li{
+    padding: 10px;
+    text-align: center;
+}
+nav ul li a{
+    display: block;
+    background-color: indigo;
+    color: white;
+    line-height:30px;
+    box-shadow: indigo 1px 2px 3px;
+}
+nav ul li a:hover{
+    background-color: blueviolet;
+    box-shadow: 0px 0px 0px;
+}
+/* 
+Seccion 3
+*/
+section aside>div{
+    background-color: lightcoral;
+}
+section #principal{
+    padding: 0px !important;
+    
+}
+
+
+#principal #curso{
+    display: inline-block;
+    padding:2%;
+    min-height: 200px;
+    background-color: lightseagreen;
+    margin-top: 15px;
+    margin-left: 2.5%;
+    
+}
