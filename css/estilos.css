@@ -49,7 +49,7 @@ nav ul li a:hover{
 /* 
 Seccion 3
 */
-/*
+
 section aside>div{
     background-color: lightcoral;
 }
@@ -82,10 +82,18 @@ section #principal{
     margin-bottom: 15px;
     width: 55%;
     border-radius: 50%;   
-}*/
+}
+
+/*
 #principal{
     display: flex;
     display:-webkit-flex;
     display:-ms-flexbox;
     
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    prefix:-webkit-image-set(
+
+    );
 }
+*/
