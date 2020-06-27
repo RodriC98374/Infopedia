@@ -1,23 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<title>InfoPedia</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../css/biblioteca.css">
+	<link rel="stylesheet" type="text/css" href="../css/biblioteca.css">
+	<link rel="stylesheet" type="text/css" href="../css/columnas.css">
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+
 </head>
 <body>
-	<header><h1>Biblioteca</h1></header>
-	
-		<div class="seccion">
-			<a href="Tecnologia.html" class="text">Tecnologia</a>
-			<a href="Tecnologia.html"><img src="../imagenes/programacion.jpg"></a>
-		</div >
-		<div class="seccion">
-			<a href="Economia.html" class="text">Economia</a>
-			<a href="Economia.html"><img src="../imagenes/economia.jpg"></a>
+	<div class="contenedor">
+		<!-- Seccion 1-->
+		<header class="fila">
+			<div id="logo" class="col-lg-2 col-md-2 col-sm-3 col-xs-12">Logotipo</div>
+			<div class="col-lg-8 col-md-8 col-sm-6 col-xs-0"></div>
+			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-0">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<center id="icono1">
+						<p>X</p>
+					</center>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<center id="icono2">
+						<p>X</p>
+					</center>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<center id="icono3">
+						<p>X</p>
+					</center>
+				</div>
+			</div>
+		</header>
+		<!--Seccion 2-->
+		<nav class="fila">
+			<ul>
+				<li class="col-lg-2 col-md-2 col-sm-6 col-xs-12"><a href="../index-responsivo.html">Inicio</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-6 col-xs-12"><a href="#">Semestre</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-6 col-xs-12"><a href="#">Practicas y Ejercicios</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-6 col-xs-12"><a href="Biblioteca.html">Biblioteca</a></li>
+				<li class="col-lg-2 col-md-2 col-sm-6 col-xs-0"></li>
+				<li class="col-lg-2 col-md-2 col-sm-6 col-xs-0"></li>
+			</ul>
+		</nav>
+		<!--Seccion 3-->
+		<div class="fila">
+			<div id="seccion" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+				<a href="biblioteca/Tecnologia.html" class="text ">Tecnologia</a>
+				<a href="biblioteca/Tecnologia.html" ><img src="../imagenes/img-biblioteca/programacion.jpg"></a>
+			</div >
+			<div id="seccion" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+				<a href="biblioteca/Economia.html" class="text ">Economia</a>
+				<a href="biblioteca/Economia.html" ><img src="../imagenes/img-biblioteca/economia.jpg"></a>
+			</div>
+			<div id="seccion" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<a href="biblioteca/Matematica.html" class="text ">Matematica</a>
+				<a href="biblioteca/Matematica.html" ><img src="../imagenes/img-biblioteca/matematicas.jpg"></a>
+			</div>
 		</div>
-		<div class="seccion">
-			<a href="Matematica.html" class="text">Matematica</a>
-			<a href="Matematica.html"><img src="../imagenes/matematicas.jpg"></a>
-		</div>
+	</div>
 </body>
 </html>
