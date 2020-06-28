@@ -4,13 +4,23 @@
     text-decoration: none;
     list-style: none;
 }
+body{
+    background-image: url(../imagenes/fondo/fondo1_1.jpg);
+    /*background-image: url(../imagenes/fondo/fondo2.jpg); */
+    /*background-image: url(../imagenes/fondo/fondo3.jpg);*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*background-color: #006494;*/
+}
 /*
 Seccion 1 
 */
+
 header #logo{
-    font-size:'kaushan script', cursive;
     font-size:60px;
     text-align: center;
+    font-family: 'Lobster', cursive;
+    color: #ffffff;
 }
 header center p{
     text-align: center;
@@ -20,30 +30,31 @@ header center p{
     color: white;
 }
 header center#icono1 p{
-    background: blue ;
+    background: #cccccc ;
 }
 header center#icono2 p{
-    background: red ;
+    background: #cccccc ;
 }
 header center#icono3 p{
-    background:green ;
+    background: #cccccc; ;
 }
 /* 
 Seccion 2
 */
+
 nav ul li{
     padding: 10px;
     text-align: center;
 }
 nav ul li a{
     display: block;
-    background-color: indigo;
+    background-color: #e76f51;
     color: white;
     line-height:30px;
-    box-shadow: indigo 1px 2px 3px;
+    box-shadow: #f4a261 1px 2px 3px;
 }
 nav ul li a:hover{
-    background-color: blueviolet;
+    background-color:#f4a261;
     box-shadow: 0px 0px 0px;
 }
 /* 
@@ -51,22 +62,23 @@ Seccion 3
 */
 
 section aside>div{
-    background-color: lightcoral;
+    background-color:#2a9d8f;
+    min-height: 550px;
+    border-radius: 4%;
 }
 section #principal{
     padding: 0px !important;
     
 }
-
-
 #principal #curso{
     display: inline-block;
     padding:2%;
-    min-height: 200px;
-    background-color: lightseagreen;
+    min-height: 450px;
+    /*max-height: 450px;*/
+    background-color:#e9c46a;
     margin-top: 15px;
     margin-left: 2.5%;
-    
+    border-radius:4%;
 }
 #principal h3{
     text-align: center;
@@ -97,3 +109,4 @@ section #principal{
     );
 }
 */
+
