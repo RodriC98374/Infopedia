@@ -1,0 +1,67 @@
+/*--------------Pantalla Escritorio--------------*/
+@media(max-width: 1200px){
+    body{
+        font-size: 15px;
+    }
+}
+/*--------------Pantalla Tablet-Horizontal-----------*/
+@media(max-width: 992px){
+    body{
+        font-size: 13px;
+    }
+span a:before,
+span a:after{
+    height: 2.8125rem !important;;
+    width: 8.125rem !important;;
+}
+    .sidebar{
+        display: none;
+    }
+    .contenedor{
+        grid-template-areas:"header     header     header"
+                            "bienvenida bienvenida bienvenida"
+                            "contenido  contenido  contenido"
+                            "footer     footer     footer";
+    }
+}
+/*--------------Pantalla Tablet-Vertical-------------*/
+@media(max-width: 768px){
+    .curso .txt-curso{
+        font-size:12px;
+    }
+    header .logo {
+        font-size: 20px;
+    }
+}
+/*---------------Pantalla Celular----------------*/
+@media(max-width: 576px){
+
+    body{
+        font-size: 12px;
+    }
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    img{
+    width: 200%;
+    height: 12.5em;
+    object-fit: cover;
+    }
+}
+@media(max-width:370px){
+    body{
+        font-size: 12px;
+    }
+    header .logo {
+        font-size: 16px;
+    }
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    img, .menu{
+        display: none;
+    }
+
+}

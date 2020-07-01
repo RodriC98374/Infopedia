@@ -1,0 +1,105 @@
+.menu{
+    border-top: 1px solid #51718C;
+	border-bottom: 1px solid #51718C;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+span{
+    position: relative;
+    width:50% ;
+    height: 55px;
+    display: inline-flex;
+    margin: 0.3125rem 1rem;
+    object-fit: cover;
+}
+span a{
+    
+    font-size: 19px;
+    transform-style: preserve-3d;
+    transition: transform .25s;
+    transform: translateZ(-25px);
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+span a:before,
+span a:after{
+    position: absolute;
+    content: '';
+    height: 3.4375rem;
+    width: 11.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid #51718C;
+}
+/*-----------------Boton 1----------------------*/
+span:nth-child(1) a:before{
+    content: "Inicio";
+    color: #2A4359;
+    background: #ffffff;
+    transform: rotateY(0) translateZ(25px);
+}
+span:nth-child(1) a:after{
+    content: "Inicio";
+    color: #ffffff;
+    background:  #154360  ;
+    transform: rotateX(90deg) translateZ(25px);
+}
+span:nth-child(1) a:hover{
+    transform: translateZ(-25px) rotateX(-90deg) ;
+}
+/*-----------------Boton 2----------------------*/
+span:nth-child(2) a:before{
+    content: "Semestre";
+    color:  #154360 ;
+    background: #ffffff;
+    transform: rotateY(0) translateZ(25px);
+}
+span:nth-child(2) a:after{
+    content: "Semestre";
+    color: #ffffff;
+    background:  #154360 ;
+    transform: rotateX(90deg) translateZ(25px);
+}
+span:nth-child(2) a:hover{
+    transform: translateZ(-25px) rotateX(-90deg) ;
+}
+/*-----------------Boton 3----------------------*/
+span:nth-child(3) a:before{
+    content: "Biblioteca";
+    color:  #154360 ;
+    background: #ffffff;
+    transform: rotateY(0) translateZ(25px);
+}
+span:nth-child(3) a:after{
+    content: "Biblioteca";
+    color: #ffffff;
+    background:  #154360 ;
+    transform: rotateX(90deg) translateZ(25px);
+}
+span:nth-child(3) a:hover{
+    transform: translateZ(-25px) rotateX(-90deg) ;
+}
+/*-----------------Boton 4----------------------*/
+span:nth-child(4) a:before{
+    content: "Acerca De";
+    color:  #154360 ;
+    background: #ffffff;
+    transform: rotateY(0) translateZ(25px);
+}
+span:nth-child(4) a:after{
+    content: "Acerca De";
+    color: #ffffff;
+    background:  #154360 ;
+    transform: rotateX(90deg) translateZ(25px);
+}
+span:nth-child(4) a:hover{
+    transform: translateZ(-25px) rotateX(-90deg) ;
+}
+
+
