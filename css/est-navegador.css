@@ -13,7 +13,7 @@ span{
     width:50% ;
     height: 55px;
     display: inline-flex;
-    margin: 0.3125rem 1rem;
+    margin: 0.6rem 1rem;
     object-fit: cover;
 }
 span a{
@@ -23,7 +23,7 @@ span a{
     transition: transform .25s;
     transform: translateZ(-25px);
     font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
+    /*color: #ffffff;*/
 }
 span a:before,
 span a:after{
@@ -35,7 +35,7 @@ span a:after{
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    border: 1px solid #51718C;
+    border: 2px solid #154360;
 }
 /*-----------------Boton 1----------------------*/
 span:nth-child(1) a:before{

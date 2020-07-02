@@ -9,11 +9,6 @@
     body{
         font-size: 13px;
     }
-span a:before,
-span a:after{
-    height: 2.8125rem !important;;
-    width: 8.125rem !important;;
-}
     .sidebar{
         display: none;
     }

@@ -8,7 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/est-navegador.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!--<link rel="stylesheet" href="css/est-navegador.css">-->
+    <link rel="stylesheet" href="css/menu-nav.css">
     <title>InfoPedia</title>
 </head>
 
@@ -20,10 +22,21 @@
                 <h1>InfoPedia</h1>
             </div>
             <nav class="menu">
-                <span><a id="boton1" href="prueba.html"></a></span>
-                <span><a id="boton2" href="#"></a></span>
-                <span><a id="boton3" href="#"></a></span>
-                <span><a id="boton4" href="#"></a></span>
+                <ul>
+                    <li class="btn"><span class="fas fa-bars"></span></li>
+                    <div class="items">
+                    <li><a href="prueba.html">inicio</a></li>
+                    <li><a href="#">semestre</a></li>
+                    <li><a href="#">biblioteca</a></li>
+                    <li><a href="#">acerca de</a></li>
+                    </div>
+                    <li class="search-icon">
+                        <input type="search" placeholder="Buscar">
+                        <label class="icon">
+                            <span class="fas fa-search"></span>
+                        </label>
+                    </li>
+                </ul>
             </nav>
         </header>
         <article class="bienvenida">
@@ -167,6 +180,13 @@
             <p>Copyright © 2020 Emmanuel Mamani - Rodrigo Cespedes</p>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $('nav ul li.btn span').click(function(){
+            $('nav ul div.items').toggleClass("show");
+            $('nav ul li.btn span').toggleClass("show");
+        });
+    </script>
 </body>
 
 </html>

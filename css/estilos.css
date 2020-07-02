@@ -35,7 +35,7 @@ img{
 ==================================================*/
 .contenedor header{
     grid-area: header;
-    padding: 1.25em;
+    padding: 1.25em 0;
     background-color: #fff;
     box-shadow: 0px 0px 70px rgba(204, 204, 204, 0.25);
 }
@@ -82,8 +82,7 @@ header .logo {
 .menu a:hover {
 	background: #000;
 	color: #fff;
-}
-*/
+}*/
 /*================================================
                     CONTENIDO
 ==================================================*/
@@ -91,7 +90,8 @@ header .logo {
 	grid-area: contenido;
 	display: grid;
 	grid-template-columns: 1;
-	grid-gap: 1.25em; 
+    grid-gap: 1.25em;
+    top:500px ; 
 }
 .contenedor .bienvenida{
     grid-area: bienvenida;
@@ -99,7 +99,6 @@ header .logo {
 	background-color:  #154360 ;
     box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
     padding: 1rem;
-
 }
 .bienvenida h2{
     color: #fff;
