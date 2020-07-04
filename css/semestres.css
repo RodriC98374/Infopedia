@@ -1,0 +1,8 @@
+.contenedor{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+
+	grid-template-areas:"header	 	 header 	  header"
+						"contenido   contenido    contenido"
+						"footer 	 footer 	  footer";
+}

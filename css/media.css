@@ -67,12 +67,10 @@
         display: grid;
         grid-template-columns: 1fr;
     }
-    img{
+    .curso img{
         display: none;
     }
     nav ul div.items.show{
         top:178px !important;
     }
-    
-
 }

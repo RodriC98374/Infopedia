@@ -1,46 +1,100 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>InfoPedia</title>
-	<link rel="stylesheet" type="text/css" href="../../css/tecnologia.css">
-</head>
-<body>
-	<header><h1>Economia</h1></header>
-	<div class="libro">
-			<h2>Contabilidad general</h2>
-			<img src="../../libros/Portadas1/contabilidad-general.jpg" height="500" width="350">
-			<br>
-			<a href="#">Ver</a>
-			<a href="#">Descargar</a>
-	</div>
-	<div class="libro">
-			<h2>Fundamentos de economia</h2>
-			<img src="../../libros/Portadas1/fundamentos-de-economia.jpg" height="500" width="350">
-			<br>
-			<a href="#">Ver</a>
-			<a href="#">Descargar</a>
-	</div>
-	<div class="libro">
-			<h2>La guerra de la mercadotecnia</h2>
-			<img src="../../libros/Portadas1/LaGuerraDeLaMercadotecnia.jpg" height="500" width="350">
-			<br>
-			<a href="#">Ver</a>
-			<a href="#">Descargar</a>
-	</div>
-	<div class="libro">
-			<h2>Manual de contabilidad basica</h2>
-			<img src="../../libros/Portadas1/ManualDeContabilidadBasica.jpg" height="500" width="350">
-			<br>
-			<a href="#">Ver</a>
-			<a href="#">Descargar</a>
-	</div>
-	<div class="libro">
-			<h2>Probabilidad y estadistica</h2>
-			<img src="../../libros/Portadas1/probabilidad-y-estadistica-1.jpg" height="500" width="350">
-			<br>
-			<a href="#">Ver</a>
-			<a href="#">Descargar</a>
-	</div>
+<html lang="en">
 
-</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="../../css/estilos.css">
+    <link rel="stylesheet" href="../../css/media.css">
+    <link rel="stylesheet" href="../../css/menu-nav.css">
+    <link rel="stylesheet" href="../../css/estilos biblioteca/tecnologia.css">
+    <title>InfoPedia</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <p class="iniciales-logo">IP</p>
+                <h1>InfoPedia</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="btn"><span class="fas fa-bars"></span></li>
+                    <div class="items">
+                        <li><a href="../../index-resp.html">inicio</a></li>
+                        <li class="sub-mn"><a href="#">semestre</a>
+                            <ul id="sub-menu">
+                                <li><a href="../semestres/semestre-1.html">Semestre 1</a></li>
+                                <li><a href="#">Semestre 2</a></li>
+                                <li><a href="#">Semestre 3</a></li>
+                                <li><a href="#">Semestre 4</a></li>
+                                <li><a href="#">Semestre 5</a></li>
+                                <li><a href="#">Semestre 6</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../biblioteca.html">biblioteca</a></li>
+                        <li><a href="#">acerca de</a></li>
+                    </div>
+                    <li class="search-icon">
+                        <input type="search" placeholder="Buscar">
+                        <label class="icon">
+                            <span class="fas fa-search"></span>
+                        </label>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="contenido-tec">
+            <div class="libro">
+				<h2 class="md">Contabilidad general</h2>
+				<img src="../../libros/Portadas1/contabilidad-general.jpg">
+				<div>
+					<div><a href="#">Ver</a></div>
+					<div><a href="#">Descargar</a></div>
+				</div>
+		</div>
+		<div class="libro">
+				<h2 class="md">Fundamentos de economia</h2>
+				<img src="../../libros/Portadas1/fundamentos-de-economia.jpg">
+				<div>
+					<div><a href="#">Ver</a></div>
+					<div><a href="#">Descargar</a></div>
+				</div>
+		</div>
+		<div class="libro">
+				<h2 class="md">La guerra de la mercadotecnia</h2>
+				<img src="../../libros/Portadas1/LaGuerraDeLaMercadotecnia.jpg">
+				<div>
+					<div><a href="#">Ver</a></div>
+					<div><a href="#">Descargar</a></div>
+				</div>
+		</div>
+		<div class="libro">
+				<h2 class="md">Manual de contabilidad basica</h2>
+				<img src="../../libros/Portadas1/ManualDeContabilidadBasica.jpg">
+				<div>
+					<div><a href="#">Ver</a></div>
+					<div><a href="#">Descargar</a></div>
+				</div>
+		</div>
+		<div class="libro">
+				<h2 class="md">Probabilidad y estadistica</h2>
+				<img src="../../libros/Portadas1/probabilidad-y-estadistica-1.jpg">
+				<div>
+					<div><a href="#">Ver</a></div>
+					<div><a href="#">Descargar</a></div>
+				</div>
+		</div>
+        </main>
+        <footer>
+            <p>Copyright © 2020 Emmanuel Mamani - Rodrigo Cespedes</p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="../../script/manu-resp.js"></script>
+	</body>
 </html>

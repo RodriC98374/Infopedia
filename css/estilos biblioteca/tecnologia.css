@@ -1,0 +1,108 @@
+.contenedor{
+	grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+
+	grid-template-areas:"header	 	 header 	  header"
+						"contenido   contenido    contenido"
+						"footer 	 footer 	  footer";
+}
+.sidebar{
+	display: none;
+}
+.contenedor .contenido-tec img{
+	max-height: 25rem;
+}
+.contenedor .contenido-tec{
+	grid-area: contenido;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, auto);
+	grid-gap: 20px;
+}
+.libro{
+	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+	display: flex;
+	flex-direction: column; 
+	background: #f1f2f2;
+	justify-content: space-between;
+}
+.libro h2{
+	padding: 1.125em 0;
+	text-align: center;
+	font-size: 1.25rem;
+	color: #2A4359;
+}
+.libro h2.gr{
+	padding: 6px;
+}
+.libro h2.md{
+	padding:10px 0 ;
+}
+.libro img{
+	align-self: end;
+}
+.libro div{
+	align-content: end;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	width: 80%;
+	margin: 10px auto;
+}
+.libro div div{
+	background: #154360;
+	margin: 0;
+	padding: 5px 2.5rem;
+	width: 30%;
+	border-radius: 7px;
+}
+.libro div div a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: 500;
+}
+.libro div div:hover{
+	box-shadow: 0 0 5px #33ffff,0 0 5px #66ffff;
+}
+@media(max-width:1132px){
+	.contenido-tec{
+		grid-template-columns: repeat(3, 1fr) !important;
+		grid-template-rows: repeat(5, auto);
+	}
+}
+@media(max-width:808px){
+	.contenido-tec{
+		grid-template-columns: repeat(2, 1fr) !important;
+		grid-template-rows: repeat(6, auto);
+	}
+}
+@media(max-width:576px){
+	
+	.contenido-tec{
+		grid-template-columns: 1fr !important;
+		grid-template-rows: repeat(12, auto);
+	}
+	.libro h2{
+	width: 80%;
+}
+	.libro{
+    display: grid;
+		grid-template-columns: 40% 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	.libro img{
+		object-fit: cover;
+		grid-column: 1/2;
+		grid-row: 1/span 2;
+		min-height: 13.75rem;
+		max-width: 100%;
+	}
+	.libro div{
+	margin: 40px auto;
+	}
+	.libro div div{
+		padding: 5px 2.1875rem;
+		width: 0%;
+	}
+}
+

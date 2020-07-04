@@ -1,124 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>InfoPedia</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="../../css/tecnologia.css">
-	<link rel="stylesheet" type="text/css" href="../../css/columnas.css">
-	<link rel="stylesheet" type="text/css" href="../../css/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="../../css/estilos.css">
+    <link rel="stylesheet" href="../../css/media.css">
+    <link rel="stylesheet" href="../../css/menu-nav.css">
+    <link rel="stylesheet" href="../../css/estilos biblioteca/tecnologia.css">
+    <title>InfoPedia</title>
 </head>
+
 <body>
-	<div class="contenedor">
-		<!-- Seccion 1-->
-		<header class="fila">
-			<div id="logo" class="col-lg-2 col-md-2 col-sm-3 col-xs-12">InfoPedia</div>
-			<div class="col-lg-8 col-md-8 col-sm-6 col-xs-0"></div>
-			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-0">
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-					<center id="icono1">
-						<p>X</p>
-					</center>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-					<center id="icono2">
-						<p>X</p>
-					</center>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-					<center id="icono3">
-						<p>X</p>
-					</center>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <p class="iniciales-logo">IP</p>
+                <h1>InfoPedia</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="btn"><span class="fas fa-bars"></span></li>
+                    <div class="items">
+                        <li><a href="../../index-resp.html">inicio</a></li>
+                        <li class="sub-mn"><a href="#">semestre</a>
+                            <ul id="sub-menu">
+                                <li><a href="../semestres/semestre-1.html">Semestre 1</a></li>
+                                <li><a href="#">Semestre 2</a></li>
+                                <li><a href="#">Semestre 3</a></li>
+                                <li><a href="#">Semestre 4</a></li>
+                                <li><a href="#">Semestre 5</a></li>
+                                <li><a href="#">Semestre 6</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../biblioteca.html">biblioteca</a></li>
+                        <li><a href="#">acerca de</a></li>
+                    </div>
+                    <li class="search-icon">
+                        <input type="search" placeholder="Buscar">
+                        <label class="icon">
+                            <span class="fas fa-search"></span>
+                        </label>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="contenido-tec">
+            <div class="libro">
+				<h2 class="gr">Aprende a programar como si estuvieras en primero</h2>
+				<img src="../../libros/Portadas1/Aprenda-Programar-Como-si-estuviera-en-primero.jpg">
+				<div>
+					<div><a href="#">Ver</a></div>
+					<div><a href="#">Descargar</a></div>
 				</div>
 			</div>
-		</header>
-		<!--Seccion 2-->
-		<nav class="fila">
-			<ul>
-				<li class="col-lg-2 col-md-2 col-sm-6 col-xs-12"><a href="../index-responsivo.html">Inicio</a></li>
-				<li class="col-lg-2 col-md-2 col-sm-6 col-xs-12"><a href="#">Semestre</a></li>
-				<li class="col-lg-2 col-md-2 col-sm-6 col-xs-12"><a href="#">Practicas y Ejercicios</a></li>
-				<li class="col-lg-2 col-md-2 col-sm-6 col-xs-12"><a href="../Biblioteca.html">Biblioteca</a></li>
-				<li class="col-lg-2 col-md-2 col-sm-6 col-xs-0"></li>
-				<li class="col-lg-2 col-md-2 col-sm-6 col-xs-0"></li>
-			</ul>
-		</nav>
-		<!-- Seccion 3-->
-		<div class="libro col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<h2 id="gr">Aprende a programar como si estuvieras en primero</h2>
-			<img src="../../libros/Portadas1/Aprenda-Programar-Como-si-estuviera-en-primero.jpg" height="450" width="290">
-			<br>
-			<a href="#">Ver</a>
-			<a href="#">Descargar</a>
-		</div>
-		<div class="libro col-lg-4 col-md-4 col-sm-6 col-xs-12" >
-			<h2>Codigo limpio</h2>
-			<img src="../../libros/Portadas1/codigoLimpio.jpg" height="450" width="290">
-			<br>
-			<a href="#">Ver</a>
-			<a href="#">Descargar</a>
-		</div>
-		<div class="libro col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<h2>El camino a un mejor programador</h2>
-			<img src="../../libros/Portadas1/ElCaminoAUnMejorProgramador.jpg" height="450" width="290">
-			<br>
-			<a href="#">Ver</a>
-			<a href="#">Descargar</a>
-		</div>
-		<div class="libro col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<h2>El libro negro de la programacion</h2>
-			<img src="../../libros/Portadas1/ElLibroNegroDeLaProgramacion.jpg" height="450" width="290">
-			<br>
-			<a href="#">Ver</a>
-			<a href="#">Descargar</a>
-		</div>
-		<div class="libro col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<h2>Fundamentos de la programacion</h2>
-			<img src="../../libros/Portadas1/fundamentos-de-programacion.jpg" height="450" width="290">
-			<br>
-			<a href="#">Ver</a>
-			<a href="#">Descargar</a>
-		</div>
-		<div class="libro col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<h2>La inteligencia artificial aplicada a la defensa</h2>
-			<img src="../../libros/Portadas1/La_inteligencia_artificial_aplicada_a_la_defensa.jpg" height="450" width="290">
-			<br>
-			<a href="#">Ver</a>
-			<a href="#">Descargar</a>
-		</div>
-		<div class="libro col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<h2>No me hagas pensar</h2>
-			<img src="../../libros/Portadas1/noMeHagasPensar.jpg" height="450" width="290">
-			<br>
-			<a href="#">Ver</a>
-			<a href="#">Descargar</a>
-		</div>
-		<div class="libro col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<h2>Phyton for kids</h2>
-			<img src="../../libros/Portadas1/PhytonForKids.jpg" height="450" width="290">
-			<br>
-			<a href="#">Ver</a>
-			<a href="#">Descargar</a>
-		</div>
-		<div class="libro col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<h2>Programming para programadores</h2>
-			<img src="../../libros/Portadas1/Scrum-Extreme-Programming-para-programadores.jpg" height="450" width="290">
-			<br>
-			<a href="#">Ver</a>
-			<a href="#">Descargar</a>
-		</div>
-		<div class="libro col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<h2>Seguridad informatica</h2>
-			<img src="../../libros/Portadas1/seguridadInformatica.jpg" height="450" width="290">
-			<br>
-			<a href="#">Ver</a>
-			<a href="#">Descargar</a>
-		</div>
-		<div class="libro col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<h2>seguridad informatica</h2>
-			<img src="../../libros/Portadas1/Seguridad_Informatica.jpg" height="450" width="290">
-			<br>
-			<a href="#">Ver</a>
-			<a href="#">Descargar</a>
-		</div>
-</body>
+			<div class="libro" >
+				<h2 class="pq">Codigo limpio</h2>
+				<img src="../../libros/Portadas1/codigoLimpio.jpg">
+				<div>
+					<div><a href="#">Ver</a></div>
+					<div><a href="#">Descargar</a></div>
+				</div>
+			</div>
+			<div class="libro">
+				<h2 class="md">El camino a un mejor programador</h2>
+				<img src="../../libros/Portadas1/ElCaminoAUnMejorProgramador.jpg">
+				<div>
+					<div><a href="#">Ver</a></div>
+					<div><a href="#">Descargar</a></div>
+				</div>
+			</div>
+			<div class="libro">
+				<h2 class="md">El libro negro de la programacion</h2>
+				<img src="../../libros/Portadas1/ElLibroNegroDeLaProgramacion.jpg">
+				<div>
+					<div><a href="#">Ver</a></div>
+					<div><a href="#">Descargar</a></div>
+				</div>
+			</div>
+			<div class="libro">
+				<h2 class="md">Fundamentos de la programacion</h2>
+				<img src="../../libros/Portadas1/fundamentos-de-programacion.jpg">
+				<div>
+					<div><a href="#">Ver</a></div>
+					<div><a href="#">Descargar</a></div>
+				</div>
+			</div>
+			<div class="libro">
+				<h2 class="gr">La inteligencia artificial aplicada a la defensa</h2>
+				<img src="../../libros/Portadas1/La_inteligencia_artificial_aplicada_a_la_defensa.jpg">
+				<div>
+					<div><a href="#">Ver</a></div>
+					<div><a href="#">Descargar</a></div>
+				</div>
+			</div>
+			<div class="libro">
+				<h2 class="pq">No me hagas pensar</h2>
+				<img src="../../libros/Portadas1/noMeHagasPensar.jpg">
+				<div>
+					<div><a href="#">Ver</a></div>
+					<div><a href="#">Descargar</a></div>
+				</div>
+			</div>
+			<div class="libro">
+				<h2 class="pq">Phyton for kids</h2>
+				<img src="../../libros/Portadas1/PhytonForKids.jpg">
+				<div>
+					<div><a href="#">Ver</a></div>
+					<div><a href="#">Descargar</a></div>
+				</div>
+			</div>
+			<div class="libro">
+				<h2 class="md">Programming para programadores</h2>
+				<img src="../../libros/Portadas1/Scrum-Extreme-Programming-para-programadores.jpg">
+				<div>
+					<div><a href="#">Ver</a></div>
+					<div><a href="#">Descargar</a></div>
+				</div>
+			</div>
+			<div class="libro">
+				<h2 class="pq">Seguridad informatica</h2>
+				<img src="../../libros/Portadas1/seguridadInformatica.jpg">
+				<div>
+					<div><a href="#">Ver</a></div>
+					<div><a href="#">Descargar</a></div>
+				</div>
+			</div>
+			<div class="libro">
+				<h2 class="pq">Seguridad informatica</h2>
+				<img src="../../libros/Portadas1/Seguridad_Informatica.jpg">
+				<div>
+					<div><a href="#">Ver</a></div>
+					<div><a href="#">Descargar</a></div>
+				</div>
+			</div>
+        </main>
+        <footer>
+            <p>Copyright © 2020 Emmanuel Mamani - Rodrigo Cespedes</p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="../../script/manu-resp.js"></script>
+	</body>
 </html>

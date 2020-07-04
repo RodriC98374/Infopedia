@@ -25,10 +25,10 @@ img{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
 
-    grid-template-areas: "header header header"
-                         "bienvenida bienvenida sidebar"
-                         "contenido contenido sidebar"
-                         "footer footer footer";
+	grid-template-areas:"header	 	 header 	  header"
+						"bienvenida  bienvenida   sidebar"
+						"contenido   contenido    sidebar"
+						"footer 	 footer 	  footer";
 }
 /*================================================
                     HEADER
@@ -58,31 +58,6 @@ header .logo {
 	font-size: 1em;
 	margin-bottom: 1rem;
 }
-/*
-.menu {
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
-	display: flex;
-	justify-content: space-between;
-}
-
-.menu a {
-	padding: 0.625em;
-	color: #000;
-	display: block;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: 400;
-	width: 100%;
-	text-align: center;
-	transition: 0.2s ease all;
-	font-size: 1em;
-}
-
-.menu a:hover {
-	background: #000;
-	color: #fff;
-}*/
 /*================================================
                     CONTENIDO
 ==================================================*/
@@ -90,8 +65,7 @@ header .logo {
 	grid-area: contenido;
 	display: grid;
 	grid-template-columns: 1;
-    grid-gap: 1.25em;
-    top:500px ; 
+    grid-gap: 1.25em; 
 }
 .contenedor .bienvenida{
     grid-area: bienvenida;

@@ -1,69 +1,107 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-	<title>InfoPedia</title>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="../css/biblioteca-resp.css">
-	<!--<link rel="stylesheet" type="text/css" href="../css/biblioteca.css">-->
-	<link rel="stylesheet" type="text/css" href="../css/columnas.css">
-	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
-	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="../css/menu-nav.css">
+    <link rel="stylesheet" href="../css/biblioteca.css">
+    <title>InfoPedia</title>
 </head>
+
 <body>
-	<div class="contenedor">
-		<!-- Seccion 1-->
-		<header class="fila">
-			<div class="col-lg-3 col-md-3 col-sm-5 col-xs-12">
-				<div  class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><img src="../imagenes/fondo/favicon.png" alt=""></div>
-				<div id="logo" class="col-lg-8 col-md-8 col-sm-8 col-xs-8">InfoPedia</div>
-			</div>
-			<div class="col-lg-6 col-md-6 col-sm-3 col-xs-0"></div>
-			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-0">
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-					<center id="icono1">
-						<p>X</p>
-					</center>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-					<center id="icono2">
-						<p>X</p>
-					</center>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-					<center id="icono3">
-						<p>X</p>
-					</center>
-				</div>
-			</div>
-		</header>
-		<!--Seccion 2-->
-		<nav class="fila">
-			<ul>
-				<li class="col-lg-2 col-md-2 col-sm-6 col-xs-12"><a href="../index-responsivo.html">Inicio</a></li>
-				<li class="col-lg-2 col-md-2 col-sm-6 col-xs-12"><a href="#">Semestre</a></li>
-				<li class="col-lg-2 col-md-2 col-sm-6 col-xs-12"><a href="#">Practicas y Ejercicios</a></li>
-				<li class="col-lg-2 col-md-2 col-sm-6 col-xs-12"><a href="Biblioteca.html">Biblioteca</a></li>
-				<li class="col-lg-2 col-md-2 col-sm-6 col-xs-0"></li>
-				<li class="col-lg-2 col-md-2 col-sm-6 col-xs-0"></li>
-			</ul>
-		</nav>
-		<!--Seccion 3-->
-		<div class="fila">
-			<div id="seccion" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<a href="biblioteca/Tecnologia.html" class="text ">Tecnologia</a>
-				<a href="biblioteca/Tecnologia.html" ><img src="../imagenes/img-biblioteca/programacion.jpg"></a>
-			</div >
-			<div id="seccion" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-				<a href="biblioteca/Economia.html" class="text ">Economia</a>
-				<a href="biblioteca/Economia.html" ><img src="../imagenes/img-biblioteca/economia.jpg"></a>
-			</div>
-			<div id="seccion" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-				<a href="biblioteca/Matematica.html" class="text ">Matematica</a>
-				<a href="biblioteca/Matematica.html" ><img src="../imagenes/img-biblioteca/matematicas.jpg"></a>
-			</div>
-		</div>
-	</div>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <p class="iniciales-logo">IP</p>
+                <h1>InfoPedia</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="btn"><span class="fas fa-bars"></span></li>
+                    <div class="items">
+                        <li><a href="../index-resp.html">inicio</a></li>
+                        <li class="sub-mn"><a href="#">semestre</a>
+                            <ul id="sub-menu">
+                                <li><a href="../html/semestres/semestre-1.html">Semestre 1</a></li>
+                                <li><a href="#">Semestre 2</a></li>
+                                <li><a href="#">Semestre 3</a></li>
+                                <li><a href="#">Semestre 4</a></li>
+                                <li><a href="#">Semestre 5</a></li>
+                                <li><a href="#">Semestre 6</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="biblioteca.html">biblioteca</a></li>
+                        <li><a href="#">acerca de</a></li>
+                    </div>
+                    <li class="search-icon">
+                        <input type="search" placeholder="Buscar">
+                        <label class="icon">
+                            <span class="fas fa-search"></span>
+                        </label>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="contenido-biblio">
+            <div class="area-biblio">
+                <a href="./biblioteca/Tecnologia.html" class="text ">Tecnologia</a>
+                <a href="./biblioteca/Tecnologia.html">
+                    <img src="../imagenes/img-biblioteca/tecnologia1.jpg" alt="Tecnologia">
+                </a>
+            </div>
+            <div class="area-biblio">
+                <a href="./biblioteca/Economia.html" class="text ">Economia</a>
+                <a href="./biblioteca/Economia.html">
+                    <img src="../imagenes/img-biblioteca/economia1.jpg" alt="Economia"> 
+                </a>
+            </div>
+            <div class="area-biblio">
+                <a href="./biblioteca/Matematica.html" class="text ">Matematica</a>
+                <a href="./biblioteca/Matematica.html"
+                    ><img src="../imagenes/img-biblioteca/matematicas1.jpg" alt="Matematica">
+                </a>
+            </div>
+        </main>
+        <aside class="sidebar">
+            <nav class="ordenar_por">
+                <ul>
+                    <li>
+                        <h3>Ordenar por:</h3>
+                        <ul>
+                            <li>1 Semestre</li>
+                            <li>2 Semestre</li>
+                            <li>3 Semestre</li>
+                            <li>4 Semestre</li>
+                            <li>5 Semestre</li>
+                            <li>6 Semestre</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Tema</h3>
+                        <ul>
+                            <li>Tema 1</li>
+                            <li>Tema 2</li>
+                            <li>Tema 3</li>
+                            <li>Tema 4</li>
+                            <li>Tema 5</li>
+                            <li>Tema 6</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <footer>
+            <p>Copyright © 2020 Emmanuel Mamani - Rodrigo Cespedes</p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="../script/manu-resp.js"></script>
 </body>
+
 </html>

@@ -39,7 +39,7 @@ nav ul div.items a:hover{
 }
 .menu ul div.items li>ul{
     border-top: 2px solid cyan;
-    top: 14.06rem;
+    top: 13.06rem;
     position: absolute;
     opacity: 0;
     visibility: hidden;
@@ -52,7 +52,9 @@ nav ul div.items li.sub-mn:hover > ul{
     opacity: 1;
 	background: rgba(21, 67, 96, 0.89);
 }
-
+nav ul div.items li.sub-mn:hover > ul a{
+    box-shadow: none;
+}
 nav ul .search-icon{
     margin:4px 0px;
     height: 2.5em;
@@ -110,10 +112,10 @@ nav ul li.btn span.show:before{
         display: block;
     }
     .menu ul li>a{
-        background: #d6eaf8 !important;
+        background: #1A5276 !important;
     }
     .menu ul ul li>a{
-        background: #000 !important;
+        background: #1F618D !important;
     }
     nav ul div.items li.sub-mn:hover >ul{
         display: none;   
