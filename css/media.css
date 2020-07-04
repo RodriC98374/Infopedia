@@ -3,12 +3,18 @@
     body{
         font-size: 15px;
     }
+    nav ul div.items li.sub-mn:hover > ul{
+        top: 184px !important;;
+    }    
 }
 /*--------------Pantalla Tablet-Horizontal-----------*/
 @media(max-width: 992px){
     body{
         font-size: 13px;
     }
+    nav ul div.items li.sub-mn:hover > ul{
+        top: 163px !important;;
+    }  
     .sidebar{
         display: none;
     }
@@ -27,6 +33,9 @@
     header .logo {
         font-size: 20px;
     }
+    nav ul div.items.show{
+        top:202px !important;
+    }
 }
 /*---------------Pantalla Celular----------------*/
 @media(max-width: 576px){
@@ -43,6 +52,9 @@
     height: 12.5em;
     object-fit: cover;
     }
+    nav ul div.items.show{
+        top:200px !important;
+    }
 }
 @media(max-width:370px){
     body{
@@ -55,8 +67,12 @@
         display: grid;
         grid-template-columns: 1fr;
     }
-    img, .menu{
+    img{
         display: none;
     }
+    nav ul div.items.show{
+        top:178px !important;
+    }
+    
 
 }
