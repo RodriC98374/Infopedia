@@ -25,10 +25,19 @@
                 <ul>
                     <li class="btn"><span class="fas fa-bars"></span></li>
                     <div class="items">
-                    <li><a href="prueba.html">inicio</a></li>
-                    <li><a href="#">semestre</a></li>
-                    <li><a href="#">biblioteca</a></li>
-                    <li><a href="#">acerca de</a></li>
+                        <li><a href="#">inicio</a></li>
+                        <li class="sub-mn"><a href="#">semestre</a>
+                            <ul id="sub-menu">
+                                <li><a href="#">Semestre 1</a></li>
+                                <li><a href="#">Semestre 2</a></li>
+                                <li><a href="#">Semestre 3</a></li>
+                                <li><a href="#">Semestre 4</a></li>
+                                <li><a href="#">Semestre 5</a></li>
+                                <li><a href="#">Semestre 6</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">biblioteca</a></li>
+                        <li><a href="#">acerca de</a></li>
                     </div>
                     <li class="search-icon">
                         <input type="search" placeholder="Buscar">
@@ -181,12 +190,7 @@
         </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script>
-        $('nav ul li.btn span').click(function(){
-            $('nav ul div.items').toggleClass("show");
-            $('nav ul li.btn span').toggleClass("show");
-        });
-    </script>
+    <script src="./script/manu-resp.js"></script>
 </body>
 
 </html>
