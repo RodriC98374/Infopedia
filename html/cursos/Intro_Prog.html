@@ -83,9 +83,38 @@
             	<p>numeros[].length;</p>
             	<h2>ArrayList()</h2>
             	<p>Los ArrayList al igual que los vectores nos sirven para almacenar variables pero la diferencia es que no debemos asignar un tamaño al ArryList esto es bastante util al momento de almacenar un numero indeterminado de variables para crear un ArrayList se hace de la siguiente manera:</p>
-            	<p>ArrayList&ltInteger&gt</p>
-
-
+            	<p>ArrayList&ltInteger&gtnumeros = new ArrayList();</p>
+            	<p>En este caso tambien se utiliza la palabra new para crear el ArrayList ponemos paretesis sin nada por que no es necesario especificar su tamaño u otra cosa.Al momento de crear un ArrayList este se crea vacio y te preguntaras como añadimos elementos a esta ista pues de la siguiente manera:</p>
+            	<p>numeros.add(4)</p>
+            	<p>Utilizamos el nombre de la lista seguido de ".add" esto significa que añadiremos un nuevo elemento y entre parentesis va el elemento que queremos añadir dependiendo que tipo de elemento queramos darle se le tiene que pasar de distintas maneras es decir si es un numero se le hace sin ningyuna distincion si es un char se pone en '' y si es un String en "" pero en si se puede hacer listas de todo incluso de objetos pero eso lo veremos mas adelante. Si queremos saber el valor de algun elemento basta con llamar a su posicion esto se hace de la siguiente manera:</p>
+            	<p>numeros.get(0);</p>
+            	<p>Esto te devolvera el valor que hay almacenado en esa posicion de la lista, para recorrer la lista puedes utilizar elementos enseñados anteriormente  como el for y el while pero eso es cosa de tu ingenio, tambien es posible eliminar un elelmento de la lista, basta con saber la posicion que ocupa y se hace de la siguiente manera:</p>
+            	<p>numeros.remove(5)</p>
+            	<p>Utilizamos el nombre de la lista seguido de ".remove()" entre parentesis va el indice o posicion de lo que queremos quitar de la lista. como ya lo viste antes utilizamos el "." y ponemos algo que queremos realizar pero ¿para que sirve el punto?. Pues este punto nos sirve para acceder a los metodos que tienen algunas variables u objetos.</p>
+            	<h2>Objetos</h2>
+            	<p>¿Que es un objeto? practicamente puede ser cualquier cosa, pero se define como la representacion abstracta de algo. Para crear un obtejo solo debemos pensar que queremos crear, que uso le daremos y que atributos tendra, los atributos son variables que definen el objeto puede tener las que gustes pero debes considerar si los atributos que asignes sirven para algo en tu programa</p>
+            	<p>Empecemos por definir un objeto llamado casa que tendra como atributos: precio, numero de habitaciones y numero de pisos:</p>
+            	<p>private int Precio;</p>
+            	<p>private int Nhabitaciones;</p>
+            	<p>private int Npisos;</p>
+            	<p>Usamos la palavra private, esto quiere decir que nuestros atributos seran de tipo privado que solo el objeto tendra control sobre ellos,seguidamente ponemos el tipo de variables que queremos asignar y luego el nombre que recibe ese atriuto, luego hacemos el constructor lo que hace este constructor es asignarle los valores a un objeto.</p>
+            	<p>public Casa(int precio, int habitaciones,int pisos){</p>
+            	<p>Precio=precio;</p>
+            	<p>Nhabitaciones=habitaciones;</p>
+            	<p>Npisos=pisos;</p>
+            	<p>Utilizamos el estado publico para poder crear un objeto, seguido pones el nombre del objeto que estas creando y entre parentesis se pone los parametros quese necesita para la creacion de ese objeto y de esta manera se crea un objeto, al momento de crear un objeto para cambiar el valor de algun atributo o mostrar algun atributo se utilizan los metodos set y get.</p>
+            	<h3>Metodo set</h3>
+            	<p>Este metodo lo que hace es cambiar el valor de algun atributo por otro para ello creamos asi el metodo:</p>
+            	<p>public void setPrecio(int precionuevo){</p>
+            	<p>Precio=precionuevo;</p>
+            	<p>}</p>
+            	<p>De esta manera se cambia un atributo, debes tener cuidado que al momento de cambiar debes darle un stributo del mismo tipo de variable.</p>
+            	<h3>Metodo get</h3>
+            	<p>El metodo get sirve para mostrar el valor de un aatributo para ello no necesitamos mandarle ningun parametro y se hace de la siguiente manera:</p>
+            	<p>public int getPrecio(){</p>
+            	<p>return Precio;</p>
+            	<p>}</p>
+            	<p>ponemos el estado publico para que pueda acceder cualquier persona y el tipo de variable que es el atributo seguidp de la palabra get junto con el nombre de la variable y poner parentesisi vacios ya que no requiere ningun parametro ,mostramos el valor con return seguido del nombre del atriburo.Asi de simple es crear un objeto espero les haya gustado esta pequeña introduccion a la programacion y que les haya sido util :3</p>
             </div>
         </select>
     </select>
