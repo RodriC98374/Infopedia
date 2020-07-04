@@ -22,23 +22,70 @@
     <select class="wrapper">
         <select class="main">
             <div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quibusdam voluptas eius
-                    suscipit excepturi inventore ea corporis sed soluta velit ex aliquid esse rerum ad eum provident
-                    fugit? Modi, aliquid.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem consectetur vitae quia minima explicabo
-                    facilis eius ab at expedita saepe ex exercitationem, id, officiis, optio aut voluptate cupiditate
-                    dicta aspernatur!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui doloremque iusto magni explicabo
-                    placeat sequi hic, error dicta quasi suscipit sunt sit minus officia temporibus id, cumque eligendi
-                    nihil inventore.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, voluptatum minima maxime
-                    obcaecati aut reprehenderit libero neque dignissimos soluta sapiente cupiditate quaerat fugiat id
-                    natus distinctio esse porro accusantium? Dolor!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam dolorem mollitia recusandae, ea
-                    repellat odit, corrupti quibusdam beatae, expedita ad itaque quae veritatis placeat harum magni
-                    voluptate eaque. Itaque, sunt!
-                </p>
+            	<h1>Introduccion a la programacion</h1>
+            	<p>Para empezar en el mundo de la programacion debes saber como se constituye un algoritmo, es una secuencia que tiene un inicio y un fin y realiza un determinado número de pasos para cumplir su objetivo, es necesario practicar la logica ya que esto te facilitara a que puedas resolver los problemas de manera mas rapida asi que empecemos con lo basico</p>
+            	<h2>Tipos de variables</h2>
+            	<p>Las variables constan de dos tipos las primitivas y las no primitivas,entre las variables primitivas tenemos a los numeros, caracteres y los booleanos, entre las no primitivas tenemos la variable cadena.</p>
+            	<h3>Variables numericas</h3>
+            	<p>existem varios tipos de variables numericas dependiendo a el tipo de numeros y el tamaño que estos representan entre las mas conocidos tenemos a Integer y  Double; Integer en este tipo de variable se le puede asignar valores enteros y su syntaxis de asignacion es int, Double es el tipo de variable en el que se le asigna valores quebrados su sintaxis de asignacion es double </p>
+            	<p>int numero = 10;  asi es como se le asigna un valor con enteros</p>
+            	<p>double quebrado = 5.2;   asi es como se asigna un valor con enteros</p>
+            	<p>Cabe aclarar que al momento de crear variables es la siguiente  TipoDeVariable Nombre = Valor;   es importante poner el ";" al terminar cada linea siempre y cuando no se trate de que haya "}" delante.</p>
+            	<h3>Variables de tipo caracter</h3>
+            	<p>Este tipo de variables almacenan un caracter sin importar el tipo de caracter que sea , este tipo de variable es Character y su sintaxis de asignacion es char para la asignacion el valor que le queremos dar debe estar entre comillas simples '' .</p>
+            	<p>char letra = 'a';</p>
+            	<h3>Variable booleana</h3>
+            	<p>Esta variable solo se le puede asignar dos valores true o false, esto nos sirve para identificar el estado de alguna variable su sintaxis de asignacion es boolean.</p>
+            	<p>boolean alerta= true;</p>
+            	<h3>Variable cadena</h3>
+            	<p>Este tipo de variable es considerado cadena por que se le puede asignar varios caracteres es decir es una cadena de chars su sintaxis de asignacion es String y para utilizarlo el valor debe estar entre comillas dobles "".</p>
+            	<p>String palabra= "infopedia";</p>
+            	<h2>Metodos</h2>
+            	<p>Para empezar aprenderemos como se hace un metodo, este consta de cuatro partes estado del metodo, tipo de variable que devuelve, nombre del metodo y parametro que necesita</p>
+            	<p>Estado del metodo: private (significa que esto no sera visible para el usuario), public (significa que esto sera visible para todos).</p>
+            	<p>Tipo de variable que devuelve: el metodo que realices puede devolver cualquier cosa que se lo pidas pueden ser int, char, boolean , String ,etc; pero tambien es posible hacer un metodo que no devuelva nada para eso utilizamos la palabra void.</p>
+            	<p>Nombre del metodo: podemos asignarle cualquier nombre al metodo que realices pero lo mas recomendable es asignarle como nombre la operacion que realiza por ejemplo si tu metodo suma entonces podrias ponerle como nombre Sumador</p>
+            	<p>Parametros: los parametros van dentro de parentesis y separados por comas de uno uno en uno, en esta parte asignamos variables que necesitemos para realizar el metodo.</p>
+            	<p>Al finalizar un metodo se ponen llaves{ }y todo el contenido de lo que hace el metodo va dentro de las llaves.</p>
+            	<p>public int Sumar(int n1,int n2){ aqui va el algoritmo}</p>
+            	<h2>Imprimir consola</h2>
+            	<p>Para impromir pantalla solo debemos poner dentro del metodo que realices System.out.println() entre los parencesis puedes asignar lo que gustes imprimir, si quieres imprimir texto debes ponerlo entre comillas dobles como si se tratara de un String o tambien podrias imprimir variables para ello simplemente pones el nombre de la variable que quieras imprimir , tambien es posible intercalar entre texto y variables para ello debemos usar la concatenacion que consiste poner el signo + entre una variable y un texto.</p>
+            	<p>System.out.println("texto"+variable+","+variable);</p>
+            	<h2>Condicional</h2>
+            	<p>Las condicionales nos sirven para restringir el metodo para que realicen una tarea u otra, para ello utilizamos if() dentro de los parentesis va la condicion que se debe cumplir para entrar a esa parte del metodo que debe estar entre {}, si no cumple esa condicion entonces ignora esa parte del metodo pero if() tiene un complemento que es el else esto nos sirve para decir si no cumple el if() entonces quiero que haga algoque esta dentro de las {} posteriores al else</p>
+            	<p>int x=2</p>
+            	<p>if(x<3){</p>
+            	<p>  x=x+2;</p>
+            	<p>} else{</p>
+            	<p>         x=0;</p>
+            	<p>            }</p>
+            	<h2>Iteradores</h2>
+            	<p>Los iteradores son ciclos que realizan una tarea repetitiva hasta que el ciclo acabe mencionaremos dos el for y el while</p>
+            	<h3>For()</h3>
+            	<p>for requiere 3 parametros que son un contador, una condicion y de que manera se incrementara la variable los tres parametros deben estar separados por punto y coma ";" fuelgo todo lo que pongas dentro de las llaves se repetira hasta que la condicion se cumpla</p>
+            	<p>int numero=0;</p>
+            	<p>for(int i=0; i<10;i++){</p>
+            	<p>numero = numero +2;</p>
+            	<p>} (al poner el ++ quiere decir que a ese nuero se le aumentara 1 y si ponemos -- signigica que disminuira en 1)</p>
+            	<h3>while()</h3>
+            	<p>Este iterador solo require un parametro que es un condicional, todo el metodo dentro las llaves posteriores al while se repetira hasta que la condicion se cumpla.</p>
+            	<p>int numero=0;</p>
+            	<p>while(numero=10){</p>
+            	<p>numero++;</p>
+            	<p>}</p>
+            	<h2>Vectores</h2>
+            	<p>Los vectores son un conjunto determinado de variables del mismo tipo que tiene un numero finito es como un casillero donde cada espacio puede ser ocupado por una variable y solo se puede poner un numero determinado de variables para asignar vectores se pone:</p>
+            	<p>int []numeros= new int[10];</p>
+            	<p>Se asigna el tipo de variables que queremos almacenar seguino de corchetes esto hace referencia a que sera un vector seguido pones el nombre que quieres que lleve el vector, el valor que se le asigna es la palabra new que significa nuevo seguido del tipo de variables a almacenar y entre corchetes la cantidad de variables que se podra guardar, al momento de crearse el vector en el caso de enteros las variables adquiriran el valor de 0 lo que quiere decir que nunca estaran vacios,para cambiar el valor de alguna de las variables almacenadas se hace lo siguiente:</p>
+            	<p>numeros[5]= 4;</p>
+            	<p>Esto quiere decir que la variable almacenada en el espacio 5 tendra el valor de 4, cabe aclarar que las variables se cuentan desde 0, por ello el espacio maximo que tiene el vector del ejemplo anterios es el espacio 9</p>
+            	<p>Tambien es posible saber el tamaño de un vector para eso utilizaremos el nombre del vector seguido de ".length":</p>
+            	<p>numeros[].length;</p>
+            	<h2>ArrayList()</h2>
+            	<p>Los ArrayList al igual que los vectores nos sirven para almacenar variables pero la diferencia es que no debemos asignar un tamaño al ArryList esto es bastante util al momento de almacenar un numero indeterminado de variables para crear un ArrayList se hace de la siguiente manera:</p>
+            	<p>ArrayList&ltInteger&gt</p>
+
+
             </div>
         </select>
     </select>
