@@ -1,0 +1,6 @@
+@media(max-width:576px){
+    .texto img{
+        width: 100%;
+        object-fit: scale-down;
+    }
+}

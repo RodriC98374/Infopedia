@@ -1,27 +1,55 @@
 <!DOCTYPE html>
-<html leng es>
+<html lang="en">
 
 <head>
-    <title>Introduccion a la Programacion</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="../../css/estilos.css">
+    <link rel="stylesheet" href="../../css/media.css">
+    <link rel="stylesheet" href="../../css/menu-nav.css">
+	<link rel="stylesheet" href="../../css/estilos cursos/curso.css">
+    <title>InfoPedia</title>
 </head>
 
 <body>
-    <header>
-        <h1>Infopedia</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Semestre</a></li>
-                <li><a href="#">Practicas</a></li>
-                <li><a href="ejercicioCalculo1.html">Ejercicios</a></li>
-            </ul>
-        </nav>
-    </header>
-    <select class="wrapper">
-        <select class="main">
-            <div>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <p class="iniciales-logo">IP</p>
+                <h1>InfoPedia</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="btn"><span class="fas fa-bars"></span></li>
+                    <div class="items">
+                        <li><a href="../../index-resp.html">inicio</a></li>
+                        <li class="sub-mn"><a href="#">semestre</a>
+                            <ul id="sub-menu">
+                                <li><a href="../semestres/semestre-1.html">Semestre 1</a></li>
+                                <li><a href="../semestres/semestre-2.html">Semestre 2</a></li>
+                                <li><a href="../semestres/semestre-3.html">Semestre 3</a></li>
+                                <li><a href="../semestres/semestre-4.html">Semestre 4</a></li>
+                                <li><a href="../semestres/semestre-5.html">Semestre 5</a></li>
+                                <li><a href="../semestres/semestre-6.html">Semestre 6</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../biblioteca.html">biblioteca</a></li>
+                        <li><a href="../../html/ejercicios/ejercicioCalculo1.html">Ejercicios</a></li>
+                    </div>
+                    <li class="search-icon">
+                        <input type="search" placeholder="Buscar">
+                        <label class="icon">
+                            <span class="fas fa-search"></span>
+                        </label>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="contenido">
+            <div class="texto">
                 <h1>Calculo I</h1>
                 <p>Calculo es la materia centrada en la matematica y al analicis de la misma. Se mostrara de manera basica en que consiste esta materia.</p>
                 <h2>Limites</h2>
@@ -41,13 +69,13 @@
                 <h2>Derivadas</h2>
                 <p>Las derivasas es el resultado de un limite y representa la pendiente de la grafica de la funcion en un punto. Esto se caldula de manera simple solo se utiliza una tabla de valores determinado para el tipo de derivadas y se reemplaza en la funcion pero debes tener cuidado de como lo uses ya que debe ir de afuera hacia adentro es decir de la exprecion que tenga mas dominio sobre los elementos o que los contenga y se hace asi sucesivamente, si no hay una expresion que conteng los elementos entos la derivada se hace individualmente sobre la funcion siguiendo la tabla de derivadas</p>
                 <!--Tabla de derivadas-->
-                <img src="Imagenes/tablaD.jpg">
+                <!--<img src="Imagenes/tablaD.jpg">-->
                 <!--Ejemplos-->
                 <p>Cabe aclarar que no todas las funciones se pueden derivar</p>
                 <h2>Itegrales</h2>
                 <p>Las integrales es el procedimiento inverso a las derivadas lo que hace es devolver la funcion a su estado original, para ello usamos la integracion por tablas que consiste en tomar los valores definidos en las tablas y colocarlos en la funcion, no siempre se podra resolver por tablas hay ocaciones en los que debemos resolver por otros metodos pero siempre llegan a la resolucion por tablas la tabla de integrales la dejaremos abajo:</p>
                 <!--Tabla de integrales-->
-                <img src="Imagenes/tablaI.jpg">
+                <!--<img src="Imagenes/tablaI.jpg">-->
                 <p>Cabe aclarar que siempre al resolver una integral se pone u "+C" que representa las constantes que posiblemente fueron eliminadas en el proceso de derivacion</p>
                 <h3>Metodo de sustitucion</h3>
                 <p>Consiste en sustituir el valor que tiene la variable de la funcion por otro que se acomode mejor para ello debemos tener en cuenta la derivada que lleva ya que tambien debe ser sustituida ,no hay determinados pasos para usar este metodo es cuestion de practica y de darse cuenta que valor puede ser sustituido y de que manera se puede sustituir su derivada al completar este procedimiento solo quedan usar las tablas para finalizar la integral</p>
@@ -57,9 +85,40 @@
                 <!--formula de integracion por partes-->
                 <p>Aqui debes tener cuidado por que debes elegir bien cual variable es integrable y cual variable es mejor derivar al finalizar te quedara una integral que puedes resolver por el metodo que mejor se adecue pero sera mas simple de lo que tenias al principio, au finalizar todo el proceso siempre te quedara una integracion por tablas que es facil de resolver</p>
             </div>
-        </select>
-    </select>
-</body>
-<footer></footer>
-
+		</main>
+		<aside class="sidebar">
+            <nav class="ordenar_por">
+                <ul>
+                    <li>
+                        <h3>Ordenar por:</h3>
+                        <ul>
+                            <li>1 Semestre</li>
+                            <li>2 Semestre</li>
+                            <li>3 Semestre</li>
+                            <li>4 Semestre</li>
+                            <li>5 Semestre</li>
+                            <li>6 Semestre</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Tema</h3>
+                        <ul>
+                            <li>Tema 1</li>
+                            <li>Tema 2</li>
+                            <li>Tema 3</li>
+                            <li>Tema 4</li>
+                            <li>Tema 5</li>
+                            <li>Tema 6</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <footer>
+            <p>Copyright © 2020 Emmanuel Mamani - Rodrigo Cespedes</p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="../../script/manu-resp.js"></script>
+	</body>
 </html>
