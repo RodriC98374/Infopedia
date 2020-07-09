@@ -14,15 +14,15 @@
     }
     nav ul div.items li.sub-mn:hover > ul{
         top: 163px !important;;
-    }  
-    .sidebar{
-        display: none;
-    }
+    } 
     .contenedor{
-        grid-template-areas:"header     header     header"
-                            "bienvenida bienvenida bienvenida"
-                            "contenido  contenido  contenido"
-                            "footer     footer     footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+	grid-template-areas:"header	 	 header 	  header"
+						"bienvenida  bienvenida   bienvenida"
+                        "contenido   contenido    contenido"
+                        "sidebar     sidebar      sidebar"
+						"footer 	 footer 	  footer";
     }
 }
 /*--------------Pantalla Tablet-Vertical-------------*/

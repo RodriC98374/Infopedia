@@ -1,0 +1,34 @@
+.sb-ini{
+    position: sticky;
+    top: 40px;
+    width: 100%;
+    padding:10px;
+    font-size: 1rem;
+}
+.sb-ini h2{
+    color: #f1f1f1;
+    font-size: 1.3em;
+}
+.sb-ini img{
+    margin: 20px auto;
+    max-width:12rem;
+    border-radius: 50%;
+}
+.sb-ini p{
+    color: #c2c2c2;
+}
+.sb-ini div{
+    margin: 16px auto;
+    width: 30%;
+    padding: 0.4375rem 0.875rem;
+    background: #f2f2f2de;
+    border-radius: 7px;
+}
+.sb-ini div a{
+    text-decoration: none;
+    color: #154360;
+    font-size: 1.1875rem;
+}
+.sb-ini div:hover{
+    background: #f2f2f2;
+}
