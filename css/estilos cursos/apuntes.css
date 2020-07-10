@@ -1,10 +1,125 @@
-.galeria-contenedor{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 150px;
-    padding: 1em;
+.contenedor{
+    grid-template-rows: repeat(4, auto);
+
+	grid-template-areas:"header	 	 header 	  header"
+						"apuntes     apuntes      sidebar"
+						"contenido   contenido    sidebar"
+						"footer 	 footer 	  footer";
 }
-.galeria-img{
-    width: 100%;
+.apuntes img{
+    cursor: pointer;
     object-fit: cover;
+}
+.apuntes h2{
+    line-height: 2em;
+    font-size: 1.7rem;
+    color: #f1f1f1;
+    text-align: center;
+}
+.seccion_apuntes{
+    grid-area: apuntes;
+    width: 100%;
+    background: #154360;
+    padding: 0 20px 20px 20px;
+}
+.apuntes_contenedor {
+	position: relative;
+}
+.apuntes_elemento{
+    margin: 0 10px;
+}
+.apuntes_anterior,
+.apuntes_siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 20px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: #fff;
+	opacity: 20%;
+}
+
+.apuntes_anterior:hover,
+.apuntes_siguiente:hover {
+	opacity: 100%;
+}
+
+.apuntes_anterior {
+	left: -20px;
+}
+
+.apuntes_siguiente {
+	right: -20px;
+}
+
+.apuntes_lista {
+	overflow: hidden;
+}
+
+.apuntes_elemento {
+	text-align: center;
+}
+
+.apuntes_indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #fff;
+	opacity: .2;
+	border-radius: 0;
+}
+
+.apuntes_indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.apuntes_indicadores .glider-dot.active {
+	opacity: 1;
+}
+#lightbox{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display:none;
+}
+#lightbox.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#lightbox.active img{
+    max-width: 85vw;
+    max-height: 90vh;
+    object-fit: scale-down;
+}
+
+@media(max-width:992px){
+        .contenedor{
+            grid-template-rows: repeat(5, auto);
+            grid-template-areas:"header     header     header"
+                                "apuntes    apuntes    apuntes"
+                                "contenido  contenido  contenido"
+                                "sidebar    sidebar    sidebar"
+                                "footer     footer     footer";
+        }  
+}
+@media(max-width:576px){
+    #lightbox.active img{
+        min-height: 80vh;
+        max-width: 90vw;
+        max-height: 90vh;
+        object-fit: scale-down;
+    }
+    .apuntes img{
+        cursor: pointer;
+        object-fit: scale-down;
+    }
 }

@@ -45,6 +45,7 @@ nav ul div.items a:hover{
     visibility: hidden;
 }
 nav ul div.items li.sub-mn:hover > ul{
+    z-index: 10;
     top: 12.125rem;
     transition: top 0.3s; 
     display: block;
