@@ -1,0 +1,52 @@
+/*============================================
+                SideBar Ejercicios
+==============================================*/
+.sb-ejer{
+    position:sticky ;
+    top: 30px;
+    height: 600px;
+}
+.sb-ejer>div{
+    background: #f1f1f1;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+.sb-ejer .sb-img{
+    background: #194e6e;
+    height: 100px;
+}
+.sb-ejer .sb-img img{
+    width: 9.375em;
+    height:9.375em;
+    margin-top:20px;
+    border-radius: 50%;
+    padding: 6px;
+    background: #f1f1f1;
+}
+.sb-ejer p{
+    width: 90%;
+    margin: 80px auto 10px auto;
+    color:#525252;
+}
+.sb-ejer .btn-sb{
+    background: #194e6e;
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 7px 10px;
+}
+.sb-ejer .btn-sb a{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 18px;
+    font-weight: 400;
+}
+@media(max-width:992px){
+    .contenedor{
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:"header     header     header"
+                            "contenido  contenido  contenido"
+                            "sidebar    sidebar    sidebar"
+                            "footer     footer     footer";
+    }
+    
+}

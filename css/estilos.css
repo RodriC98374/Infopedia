@@ -152,12 +152,11 @@ header .logo {
                     SIDEBAR
 ==================================================*/
 .contenedor .sidebar{
-    padding: 5em 25px; 
+    padding: 25px; 
 	text-align: center;
 	min-height: 100px; 
-	grid-area: aside;
+	grid-area: sidebar;
 	background: #154360 ;
-	color: #8596A6;
 	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
     grid-area: sidebar;
 }

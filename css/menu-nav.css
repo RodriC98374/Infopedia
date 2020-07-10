@@ -56,7 +56,7 @@ nav ul div.items li.sub-mn:hover > ul a{
     box-shadow: none;
 }
 nav ul .search-icon{
-    margin:4px 0px;
+    margin:4px 6px;
     height: 2.5em;
     width:15em;
     display: flex;
