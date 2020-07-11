@@ -81,6 +81,7 @@
 .apuntes_indicadores .glider-dot.active {
 	opacity: 1;
 }
+/*-----------------Efecto Lightbox----------------------*/
 #lightbox{
     position: fixed;
     z-index: 1000;
@@ -96,7 +97,7 @@
     align-items: center;
 }
 #lightbox.active img{
-    max-width: 85vw;
+    max-width: 50vw;
     max-height: 90vh;
     object-fit: scale-down;
 }
@@ -113,7 +114,7 @@
 }
 @media(max-width:576px){
     #lightbox.active img{
-        min-height: 80vh;
+        min-height: 60vh;
         max-width: 90vw;
         max-height: 90vh;
         object-fit: scale-down;

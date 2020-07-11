@@ -11,7 +11,11 @@ Inforpedia es una pagina web con el objetivo de brindar cursos y contenido de la
 ## Tecnologia a usar
  - Visual Code Studio 
  - Github
- - NodeJs
  - Sublime Text
  - Html
  - Css
+ - JavaScript
+
+## Como usarlo?
+
+Solo debes descargar el repositorio y abrir el archivo index.html en un navegador, no es necesario ningun pluggin o dependencia 

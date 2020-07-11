@@ -47,13 +47,16 @@
     }
     .texto h1, h2, h3{
     line-height:2.5em;
+    }
 }
-    @media(max-width:576px){
+@media(max-width:576px){
         .texto{
         font-size: 15px;
     }
     .texto h1, h2, h3{
     line-height:2em;
-}
+    }
+    .texto img{
+        width: 100%;
     }
 }
