@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="../../css/estilos cursos/curso.css">
 	<link rel="stylesheet" href="../../css/estilos cursos/ejercicios.css">
 	<link rel="stylesheet" href="../../css/aside/sidebar.css">
+	<link rel="stylesheet" href="../../css/buscador.css">
 	<title>Ejercicios Calculo I</title>
 </head>
 
@@ -39,8 +40,9 @@
 						<li><a href="../biblioteca.html">biblioteca</a></li>
 						<li><a href="#">Apuntes</a></li>
 					</div>
-					<li class="search-icon">
-						<input type="search" placeholder="Buscar">
+					<div class="close-search"><span class="fa fa-times-circle"></span></div>
+                    <li class="search-icon">
+                        <input type="search" placeholder="Buscar" id="input-buscar">
 						<label class="icon">
 							<span class="fas fa-search"></span>
 						</label>
@@ -48,6 +50,7 @@
 				</ul>
 			</nav>
 		</header>
+		<ul class="caja-busqueda"></ul>
 		<main class="contenido">
 			<div class="texto">
 				<h2>Tema 1: Limites</h2>
@@ -131,6 +134,7 @@
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<script src="../../script/manu-resp.js"></script>
+	<script src="../../script/buscador_cursos.js"></script>
 </body>
 
 </html>

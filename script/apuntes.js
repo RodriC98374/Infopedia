@@ -10,16 +10,16 @@ window.addEventListener('load', function(){
 		responsive: [
 			{
 			  // screens greater than >= 576px
-			  breakpoint: 370,
-			  settings: {
+			  	breakpoint: 370,
+			  	settings: {
 				// Set to `auto` and provide item width to adjust to viewport
 				slidesToShow: 2,
 				slidesToScroll: 2
-			  }
+			}
 			},{
 			  // screens greater than >= 576px
-			  breakpoint: 576,
-			  settings: {
+			  	breakpoint: 576,
+			  	settings: {
 				slidesToShow: 3,
 				slidesToScroll: 3
 			  }
@@ -27,8 +27,8 @@ window.addEventListener('load', function(){
 				// screens greater than >= 992px
 				breakpoint: 768,
 				settings: {
-				  slidesToShow: 4,
-				  slidesToScroll: 4
+				 	slidesToShow: 4,
+				  	slidesToScroll: 4
 				}
 			  }
 		]
