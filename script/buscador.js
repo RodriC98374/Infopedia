@@ -41,9 +41,8 @@ function listaLimpia(){
 function cerrar_show(){
     closer.classList.add('show')
 }
-
 const cerrar = () =>{
-    closer.addEventListener('click', listaLimpia)
+    closer.addEventListener('click', listaLimpia);
 }
 
 boton.addEventListener('click', filtrar);

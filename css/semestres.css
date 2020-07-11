@@ -11,6 +11,11 @@
 }
 .curso{
 	flex-direction: column;
+	position: relative;
+}
+.curso .iniciar{
+	position: absolute;
+	bottom: 14px;
 }
 .curso img{
 	width: 200%;
@@ -23,21 +28,24 @@
 	}
 	.curso{
 	flex-direction: row;
-}
+	}
 	.curso .txt-curso{
     padding: 1.25em;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	width: 100%;
-}
-.curso .img-curso{
+	}
+	.curso .img-curso{
     width: 50%;
     object-fit: cover;
-}
+	}
 	.curso .img-curso img{
 		width: 100%;
 		height:100%;
+	}
+	.curso .iniciar{
+		position: relative;
 	}
 }
 @media(max-width:576px){

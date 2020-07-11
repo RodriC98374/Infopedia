@@ -8,7 +8,6 @@
     z-index: 10;
     overflow: hidden;
     font-size: 1rem;
-    /*display: none;*/
 }
 .close-search{
     position: absolute;

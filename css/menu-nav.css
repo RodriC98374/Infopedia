@@ -32,29 +32,28 @@ nav ul div.items a{
 	font-size: 1em;
 }
 nav ul div.items a:hover{
-    color: cyan;
+    color: #154360;
     border-radius: 6px;
-    box-shadow: 0 0 5px #33ffff,
-                0 0 5px #66ffff;
+    background-color: #f1f1f1;
 }
 .menu ul div.items li>ul{
     border-top: 2px solid cyan;
-    top: 13.06rem;
+    top: 208.96px;
     position: absolute;
     opacity: 0;
     visibility: hidden;
+    transition: top 0.2s; 
 }
 nav ul div.items li.sub-mn:hover > ul{
     z-index: 10;
-    top: 12.125rem;
-    transition: top 0.3s; 
+    top: 194px;
     display: block;
     visibility: visible;
     opacity: 1;
-	background: rgba(21, 67, 96, 0.89);
+    background: rgba(21, 67, 96, 0.89);
 }
 nav ul div.items li.sub-mn:hover > ul a{
-    box-shadow: none;
+    border-radius:0px;
 }
 nav ul .search-icon{
     margin:4px 6px;

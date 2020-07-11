@@ -131,7 +131,7 @@ header .logo {
 	margin-bottom: 1.25rem; 
 	color: #000000;
 }
-#iniciar {
+.iniciar {
     text-decoration: none;
 	color: #fff;
 	cursor: pointer;
@@ -144,7 +144,7 @@ header .logo {
 	align-self: flex-end;
 }
 
-#iniciar:hover {
+.iniciar:hover {
 	background: #2A4359;
 	text-decoration: none;
 }
